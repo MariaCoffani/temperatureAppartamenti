@@ -6,6 +6,7 @@ int main() {
     float m[APP][GIORNI];
     int scelta;
     bool datiInseriti = false;   // stato del programma
+    //progetto sviluppo
 
     do {
         cout << "\nMENU\n";
