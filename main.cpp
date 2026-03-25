@@ -7,6 +7,7 @@ int main() {
     int scelta;
     bool datiInseriti = false;   // stato del programma
     //progetto sviluppo
+    //commento da annullare
 
     do {
         cout << "\nMENU\n";
