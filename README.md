@@ -5,7 +5,7 @@ Progetto didattico per esercitarsi su matrici, funzioni e organizzazione del cod
 
 Sistema per il monitoraggio dei consumi energetici settimanali di più appartamenti tramite matrice appartamenti × giorni.
 
----
+
 
 ## Struttura
 
@@ -13,7 +13,7 @@ Sistema per il monitoraggio dei consumi energetici settimanali di più appartame
 * `temperature.h` – dichiarazioni
 * `temperature.cpp` – implementazione
 
----
+
 
 ## Obiettivo
 
@@ -23,14 +23,14 @@ Completare il programma:
 * dichiarazioni in `temperature.h`
 * funzioni `mostraTabella` e `totaleAppartamento`
 
----
+
 
 ## Requisiti
 
 * Il menu deve essere ripetuto fino all’uscita
 * Le operazioni devono essere eseguite solo dopo l’inserimento dei dati
 
----
+
 
 ## Consegna
 
@@ -38,4 +38,4 @@ Completare il programma:
 * Completare il progetto
 * Commit, push e pull request
 
----
+
