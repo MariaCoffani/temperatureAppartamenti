@@ -5,37 +5,19 @@ Progetto didattico per esercitarsi su matrici, funzioni e organizzazione del cod
 
 Sistema per il monitoraggio dei consumi energetici settimanali di più appartamenti tramite matrice appartamenti × giorni.
 
-
-
 ## Struttura
 
-* `main.cpp` – menu
-* `temperature.h` – dichiarazioni
-* `temperature.cpp` – implementazione
-
-
+Il progetto è suddiviso in tre file: main.cpp, che gestisce il menu, temperature.h, che contiene le dichiarazioni, e temperature.cpp, dove sono implementate le funzioni.
 
 ## Obiettivo
 
-Completare il programma:
-
-* menu nel `main`
-* dichiarazioni in `temperature.h`
-* funzioni `mostraTabella` e `totaleAppartamento`
-
-
+L’obiettivo è completare il programma lavorando sui tre file: nel main va completato il menu e vanno richiamate le funzioni corrette; nel file header vanno aggiunte le dichiarazioni mancanti; nel file di implementazione vanno realizzate le funzioni mostraTabella e totaleAppartamento.
 
 ## Requisiti
 
-* Il menu deve essere ripetuto fino all’uscita
-* Le operazioni devono essere eseguite solo dopo l’inserimento dei dati
-
-
+Il programma deve continuare a mostrare il menu fino alla scelta di uscita e deve evitare l’esecuzione delle operazioni se i dati non sono stati ancora inseriti.
 
 ## Consegna
 
-* Creare una branch personale
-* Completare il progetto
-* Commit, push e pull request
-
+Dopo aver clonato il repository, si richiede di creare una branch personale, completare il progetto, effettuare commit e push e infine aprire una pull request.
 
