@@ -21,3 +21,10 @@ Il programma deve continuare a mostrare il menu fino alla scelta di uscita e dev
 
 Dopo aver clonato il repository, si richiede di creare una branch personale, completare il progetto, effettuare commit e push e infine aprire una pull request.
 
+
+
+
+*******
+Questo progetto è distribuito sotto licenza CC BY-NC-SA 4.0.
+Può essere utilizzato e modificato citando l’autore, non per fini commerciali e mantenendo la stessa licenza.
+
