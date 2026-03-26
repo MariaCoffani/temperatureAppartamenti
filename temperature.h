@@ -1,14 +1,14 @@
 #ifndef FILE_H
 #define FILE_H
 
-const int APP = 2;
+const int APP = 3;
 const int GIORNI = 7;
 
+
+
+//PROSEGUI DICHIARANDO LE ALTRE DUE FUNZIONI NECESSARIE
 void inserisciConsumi(float m[APP][GIORNI]);
-void mostraTabella(float m[APP][GIORNI]);
-void totaleAppartamento(float m[APP][GIORNI]);
-void totaleGiorno(float m[APP][GIORNI]);
-void giornoMaxConsumo(float m[APP][GIORNI]);
-void contaSopraSoglia(float m[APP][GIORNI]);
+
+
 
 #endif
