@@ -28,35 +28,40 @@ solo su dati validi.
 int main() {
     float m[APP][GIORNI];
     int scelta;
+    bool abilitazione=false;
 
     do {
         cout << "\nMENU\n";
-        cout << "1. Inserire consumi\n";
+        cout << " 1. Inserire consumi\n 2. Visualizzare tabella\n 3. Totale appartamento\n 0. Esci\n";
         cin >> scelta;
 
         switch (scelta) {
 
-            case 1:
-                inserisciConsumi(m);
-                break;
+        case 1:
+            inserisciConsumi(m);
+            abilitazione=true;
+            break;
 
-            case 2:
+        case 2:
+            if (abilitazione)
+                mostraTabella(m);
+            else
+                seNonAbilitato();
+            break;
 
+        case 3:
+            if (abilitazione)
+                totaleAppartamento(m);
+            else
+                seNonAbilitato();
+            break;
 
-                break;
+        case 0:
+            cout << "Uscita\n";
+            break;
 
-            case 3:
-
-
-
-                break;
-
-            case 0:
-                cout << "Uscita\n";
-                break;
-
-            default:
-                cout << "Scelta non valida\n";
+        default:
+            cout << "Scelta non valida\n";
         }
 
     } while (scelta != 0);

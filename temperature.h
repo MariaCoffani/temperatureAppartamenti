@@ -8,7 +8,8 @@ const int GIORNI = 7;
 
 //PROSEGUI DICHIARANDO LE ALTRE DUE FUNZIONI NECESSARIE
 void inserisciConsumi(float m[APP][GIORNI]);
-
-
+void mostraTabella(float m[APP][GIORNI]);
+void totaleAppartamento(float m[APP][GIORNI]);
+void seNonAbilitato();
 
 #endif
