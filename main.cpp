@@ -23,40 +23,51 @@ Modifica il codice per evitare questo comportamento e garantire che le operazion
 solo su dati validi.
 
 */
-
+using namespace std;
 
 int main() {
-    float m[APP][GIORNI];
+    float m[APP][GIORNI]; //
     int scelta;
+    int datiOk = 0;
 
     do {
-        cout << "\nMENU\n";
-        cout << "1. Inserire consumi\n";
+        cout << "MENU" << endl;
+        cout << "1. Inserire consumi" << endl;
+        cout << "2. Visualizzare tabella" << endl;
+        cout << "3. Totale appartamento" << endl;
+        cout << "0. Esci" << endl;
+        cout << "Scelta: ";
         cin >> scelta;
 
         switch (scelta) {
 
             case 1:
                 inserisciConsumi(m);
+                datiOk = 1;
                 break;
 
             case 2:
-
-
+                if (datiOk == 1) {
+                    mostraTabella(m);
+                } else {
+                    cout << "Errore, inserisci prima i dati" << endl;
+                }
                 break;
 
             case 3:
-
-
-
+                if (datiOk == 1) {
+                    totaleAppartamento(m);
+                } else {
+                    cout << "Errore, inserisci prima i dati" << endl;
+                }
                 break;
 
             case 0:
-                cout << "Uscita\n";
+                cout << "Uscita" << endl;
                 break;
 
             default:
-                cout << "Scelta non valida\n";
+                cout << "Scelta non valida" << endl;
         }
 
     } while (scelta != 0);
