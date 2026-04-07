@@ -1,3 +1,14 @@
+/*Un edificio vuole monitorare il consumo energetico gornaliero
+di più appartamenti durante una settimana.
+
+I dati devono essere memorizzati in una matrice
+(appartamento*giorni), dove giorni in questo caso sono 7, una settimana
+dove ogni elemento rappresenta il consumo in kWh.
+
+1.main.cpp = contenere il menu e le chiamate ale funzioni (switch case)
+2.temperature.h = dichiarazione delle funzioni
+3.temperature.cpp = implementare le funzioni
+*/
 #include <iostream>
 #include "temperature.h"
 using namespace std;
@@ -27,12 +38,21 @@ solo su dati validi.
 
 int main() {
     float m[APP][GIORNI];
-    int scelta;
-
+    int scelta,s,a;
+    bool datiValidi=false;
     do {
         cout << "\nMENU\n";
-        cout << "1. Inserire consumi\n";
+        cout << "1. Inserire consumi\n"<<"2. Visualizzare tabella \n"<<"3. Totale appartamento\n"<<"0. Esci"<<endl;
         cin >> scelta;
+
+        while (datiValidi==false){
+            if (scelta==1) {
+                datiValidi=true;
+            } else {
+                cout << "Inserisci dei dati per poter visualizzare la tabella o il consumo totale  di un appartamento\n"<<"1. Inserire consumi"<<endl;
+                cin >> scelta;
+            }
+        }
 
         switch (scelta) {
 
@@ -41,14 +61,11 @@ int main() {
                 break;
 
             case 2:
-
-
+                mostraTabella(m);
                 break;
 
             case 3:
-
-
-
+                totaleAppartamento(s,a,m);
                 break;
 
             case 0:
