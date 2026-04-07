@@ -28,27 +28,36 @@ solo su dati validi.
 int main() {
     float m[APP][GIORNI];
     int scelta;
-
+    bool datiInseriti = false;
     do {
         cout << "\nMENU\n";
-        cout << "1. Inserire consumi\n";
+        cout << "1. Premi 0 per uscire\n";
+        cout << "2. Premi 1 per inserire consumi\n";
+        cout << "3. Premi 2 per controllare la tabella dei consumi\n";
+        cout << "4. Premi 3 per vedere i consumi dell'appartamento x \n";
         cin >> scelta;
 
         switch (scelta) {
 
             case 1:
                 inserisciConsumi(m);
+                datiInseriti = true;
                 break;
 
             case 2:
-
-
+                if (datiInseriti) {
+                    mostraTabella(m);
+                } else {
+                    cout << "ERRORE, Inserisci prima i consumi" << endl;
+                }
                 break;
 
             case 3:
-
-
-
+                if (datiInseriti) {
+                    totaleAppartamento(m);
+                } else {
+                    cout << "ERRORE, Inserisci prima i consumi" << endl;
+                }
                 break;
 
             case 0:
