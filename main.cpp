@@ -31,7 +31,7 @@ int main() {
 
     do {
         cout << "\nMENU\n";
-        cout << "1. Inserire consumi\n";
+        cout << "1. Inserire consumi,\n2.mostra tabella,\n3.totale appartamento,\n0. uscita";
         cin >> scelta;
 
         switch (scelta) {
@@ -41,14 +41,11 @@ int main() {
                 break;
 
             case 2:
-
-
+                mostraTabella(m);
                 break;
 
             case 3:
-
-
-
+                totaleAppartamento(m);
                 break;
 
             case 0:
