@@ -28,6 +28,7 @@ solo su dati validi.
 int main() {
     float m[APP][GIORNI];
     int scelta;
+    bool datiInseriti = false;
 
     do {
         cout << "\nMENU\n";
@@ -38,17 +39,23 @@ int main() {
 
             case 1:
                 inserisciConsumi(m);
+                datiInseriti=true;
                 break;
 
             case 2:
-
-
+                if (datiInseriti) {
+                    mostraTabella(m);
+                } else {
+                    cout << "errore: devi prima inserire i dati (opzione 1)" << endl;
+                }
                 break;
 
             case 3:
-
-
-
+                if (datiInseriti) {
+                    totaleAppartamento(m);
+                } else {
+                    cout << "errore: dati non presenti, seleziona prima l'opzione 1" << endl;
+                }
                 break;
 
             case 0:
