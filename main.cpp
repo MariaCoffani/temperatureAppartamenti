@@ -24,6 +24,7 @@ solo su dati validi.
 
 */
 
+bool controllo;
 
 int main() {
     float m[APP][GIORNI];
@@ -31,25 +32,35 @@ int main() {
 
     do {
         cout << "\nMENU\n";
-        cout << "1. Inserire consumi\n";
+        cout << "Premere 1 per Inserire consumi\n Premere 2 per vedere la tabella\n Premere 3 per vedere il consumo totale\n";
         cin >> scelta;
 
         switch (scelta) {
 
             case 1:
+                controllo = true;
                 inserisciConsumi(m);
                 break;
 
             case 2:
+                if (controllo) {
+                    mostraTabella(m);
+                    break;
+                }else {
+                    cout << "Prima inserisci i dati." << endl;
+                    break;
+                }
 
-
-                break;
 
             case 3:
+                if (controllo) {
+                    totaleAppartamento(m);
+                    break;
+                }else {
+                    cout << "Prima inserisci i dati." << endl;
+                    break;
+                }
 
-
-
-                break;
 
             case 0:
                 cout << "Uscita\n";
